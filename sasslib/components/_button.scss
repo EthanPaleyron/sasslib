@@ -21,8 +21,8 @@ $val in $colors {
             background-color: lighten($val, 5);
         }
 
-        @xs {
-            font-size: 2px;
+        @include xs {
+            font-size: 1em;
         }
     }
 

@@ -1,0 +1,11 @@
+opacity
+border-radius
+font-size
+width
+headh
+
+z-index
+
+@media screen
+
+:active

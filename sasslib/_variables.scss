@@ -1,4 +1,4 @@
-//colors
+// 🔴colors
 $primary: #326dee;
 $secondary: #1ac888;
 $error: #d32752;
@@ -10,13 +10,30 @@ $colors: (
     "secondary": $secondary,
     "error": $error,
     "info": $info,
-    "blue": #1919e6,
-    "red": #e61919,
-    "yellow": #e6e619,
-    "green": #19e635,
-    "orange": #ffa600,
-    "purple": #9900ff,
-    "gray": #808080,
+
+    // rainbow color
+    "red": red,
+    "orange": orange,
+    "yellow": yellow,
+    "lawngreen": lawngreen,
+    "blue": blue,
+    "purple": blueviolet,
+
+    // other
+    "goldenrod": goldenrod,
+    "green": green,
+    "olive": olive,
+    "dodgerblue": dodgerblue,
+    "cyan": cyan,
+    "violet": violet,
+    "pink": pink,
+    "salmon": salmon,
+    "wheat": wheat,
+    "antiquewhite": antiquewhite,
+    "darkslategrey": darkslategrey,
+    "gray": gray,
+
+    // black and white
     "black": black,
     "white": white,
 );
@@ -26,19 +43,70 @@ $colors: (
 // @debug map-remove($map: $colors, $key: "primary");
 // @debug map-merge($map1: $colors, $map2: ("primary": $primary, ));
 
+// 🔵main
 
-//spacing
-$base-padding: 0.75rem;
+// font-style
+$font-style: normal, italic, oblique;
+
+// font-weight
+$font-weight: normal, bold, lighter, bolder, 100, 200, 300, 400, 500, 600, 700, 800, 900;
+
+// list-style
+$list-style: revert, square, georgian, lower-roman, inside, circle, none;
+
+// background
+$background: contain, repeat, no-repeat, cover, center, space;
+
+// overflow
+$overflow: visible, hidden, scroll, auto;
+
+// border-style
+$border-style: solid, double, groove, ridge, inset, outset, dashed, dotted, none;
+
+// cursor
+$cursor: default, pointer, text, progress, wait, no-drop, not-allowed, help, move, grab, grabbing, zoom-in, zoom-out, crosshair;
+
+
+// 🔵positioning
+
+// position text
+$text-align: start, center, end;
+
+// display
+$display: block, inline-block, flex, grid, none;
+
+// direction
+$direction: column, row, column-reverse, row-reverse;
+
+// justify-content
+$justify-content: start, center, end, space-between, space-around, space-evenly;
+
+// align-items
+$align-items: start, center, end, stretch;
+
+// position
+$position: static, relative, absolute;
+
+// float
+$float: left, right, none;
+
+
+
+
+
+// spacing
 $base-margin: 0.75rem;
+$base-padding: 0.75rem;
+$gap: 5px;
 
-//borders
+// opacity
+$opacity: 0.1;
+
+// borders
 $base-border-thickness: 1px;
 $base-border-radius: 20px;
 
-//box-shadow
-$base-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
-
-//font-size
+// font-size
 $base-font-size: 1rem;
 $font-size-sm: $base-font-size * 0.75;
 $font-size-lg: $base-font-size * 1.5;

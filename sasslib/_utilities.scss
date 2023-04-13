@@ -1,87 +1,6 @@
 @use 'sass:math';
 
 $utilities: (
-    "padding": ("prefix": "p",
-        "values": ("0": 0,
-            "1": $base-padding,
-            "2": $base-padding * 2,
-            "3": $base-padding * 4,
-            "4": $base-padding * 6,
-            "5": $base-padding * 8),
-    ),
-    "padding-left": ("prefix": "pl",
-        "values": ("0": 0,
-            "1": $base-padding,
-            "2": $base-padding * 2,
-            "3": $base-padding * 4,
-            "4": $base-padding * 6,
-            "5": $base-padding * 8),
-    ),
-    "padding-right": ("prefix": "pr",
-        "values": ("0": 0,
-            "1": $base-padding,
-            "2": $base-padding * 2,
-            "3": $base-padding * 4,
-            "4": $base-padding * 6,
-            "5": $base-padding * 8),
-    ),
-    "padding-top": ("prefix": "pt",
-        "values": ("0": 0,
-            "1": $base-padding,
-            "2": $base-padding * 2,
-            "3": $base-padding * 4,
-            "4": $base-padding * 6,
-            "5": $base-padding * 8),
-    ),
-    "padding-bottom": ("prefix": "pb",
-        "values": ("0": 0,
-            "1": $base-padding,
-            "2": $base-padding * 2,
-            "3": $base-padding * 4,
-            "4": $base-padding * 6,
-            "5": $base-padding * 8),
-    ),
-    "margin": ("prefix": "m",
-        "values": ("0": 0,
-            "1": $base-margin,
-            "2": $base-margin * 2,
-            "3": $base-margin * 4,
-            "4": $base-margin * 6,
-            "5": $base-margin * 8),
-    ),
-    "margin-left": ("prefix": "ml",
-        "values": ("0": 0,
-            "1": $base-margin,
-            "2": $base-margin * 2,
-            "3": $base-margin * 4,
-            "4": $base-margin * 6,
-            "5": $base-margin * 8),
-    ),
-    "margin-right": ("prefix": "mr",
-        "values": ("0": 0,
-            "1": $base-margin,
-            "2": $base-margin * 2,
-            "3": $base-margin * 4,
-            "4": $base-margin * 6,
-            "5": $base-margin * 8),
-    ),
-    "margin-top": ("prefix": "mt",
-        "values": ("0": 0,
-            "1": $base-margin,
-            "2": $base-margin * 2,
-            "3": $base-margin * 4,
-            "4": $base-margin * 6,
-            "5": $base-margin * 8),
-    ),
-    "margin-bottom": ("prefix": "mb",
-        "values": ("0": 0,
-            "1": $base-margin,
-            "2": $base-margin * 2,
-            "3": $base-margin * 4,
-            "4": $base-margin * 6,
-            "5": $base-margin * 8),
-    ),
-
     "opacity": ("prefix": "o",
         "values": ("10": 0.1,
             "20": 0.2,
@@ -103,12 +22,7 @@ $utilities: (
             "lg": $base-border-radius * 2,
             "full": 50%,
         )),
-    "display": ("prefix": "display",
-        "values": ("n": none,
-            "b": block,
-            "f": flex,
-            "i": inline,
-            "i-b": inline-block)),
+
     "font-size": ("prefix": "font",
         "values": ("sm": $font-size-sm,
             "md": $base-font-size,
@@ -116,6 +30,56 @@ $utilities: (
             "xl": $font-size-xl,
             "xxl": $font-size-xxl ))
 );
+
+@for $i from 100 through 0 {
+
+    // margin
+    .m-#{$i} {
+        margin: $base-margin * $i;
+    }
+
+    .mt-#{$i} {
+        margin-top: $base-margin * $i;
+    }
+
+    .mr-#{$i} {
+        margin-right: $base-margin * $i;
+    }
+
+    .mb-#{$i} {
+        margin-bottom: $base-margin * $i;
+    }
+
+    .ml-#{$i} {
+        margin-left: $base-margin * $i;
+    }
+
+    // padding
+    .p-#{$i} {
+        padding: $base-padding * $i;
+    }
+
+    .pt-#{$i} {
+        padding-top: $base-padding * $i;
+    }
+
+    .pr-#{$i} {
+        padding-right: $base-padding * $i;
+    }
+
+    .pb-#{$i} {
+        padding-bottom: $base-padding * $i;
+    }
+
+    .pl-#{$i} {
+        padding-left: $base-padding * $i;
+    }
+
+    // gap
+    .gap-#{$i} {
+        gap: $gap * $i;
+    }
+}
 
 // generate utility classes
 @each $property,
@@ -136,5 +100,96 @@ $map in $utilities {
                 #{$property}: $v;
             }
         }
+    }
+}
+
+// font-style
+@each $key in $font-style {
+    .font-style-#{$key} {
+        font-style: $key;
+    }
+}
+
+// font-weight
+@each $key in $font-weight {
+    .font-weight-#{$key} {
+        font-weight: $key;
+    }
+}
+
+// list-style
+@each $key in $list-style {
+    .list-style-#{$key} {
+        list-style: $key;
+    }
+}
+
+// overflow
+@each $key in $overflow {
+    .overflow-#{$key} {
+        overflow: $key;
+    }
+}
+
+// border-style
+@each $key in $border-style {
+    .border-style-#{$key} {
+        border-style: $key;
+    }
+}
+
+// cursor
+@each $key in $cursor {
+    .cursor-#{$key} {
+        cursor: $key;
+    }
+}
+
+// position text
+@each $key in $text-align {
+    .text-#{$key} {
+        text-align: $key;
+    }
+}
+
+// display
+@each $key in $display {
+    .display-#{$key} {
+        display: $key;
+    }
+}
+
+// direction
+@each $key in $direction {
+    .direction-#{$key} {
+        flex-direction: $key;
+    }
+}
+
+// justify-content
+@each $key in $justify-content {
+    .justify-#{$key} {
+        justify-content: $key;
+    }
+}
+
+// align-items
+@each $key in $align-items {
+    .items-#{$key} {
+        align-items: $key;
+    }
+}
+
+// position
+@each $key in $position {
+    .position-#{$key} {
+        position: $key;
+    }
+}
+
+// float
+@each $key in $float {
+    .float-#{$key} {
+        float: $key;
     }
 }

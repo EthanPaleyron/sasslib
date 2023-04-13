@@ -1,23 +1,14 @@
-//variables & functions
-@import 'functions';
-@import 'variables';
+// 🔵font-family
+body {
+    font-family: Poppins;
+}
 
-//base & layout
-@import 'base';
-@import 'breakpoints';
-@import 'grid';
+// 🔵grid
 
-//colors
-@import 'colors';
+// 🔵background-image
 
-//components
-@import 'components/card';
-@import 'components/button';
-@import 'components/navbar';
-@import 'components/badge';
+// 🔵box-shadow
+$base-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
 
-//utilities
-@import 'utilities';
-
-//slides
-@import 'slide';
+// 🔵linear-gradient
+$linear-gradient: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
