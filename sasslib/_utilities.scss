@@ -124,6 +124,13 @@ $map in $utilities {
     }
 }
 
+// background
+@each $key in $background {
+    .background-#{$key} {
+        background: $key;
+    }
+}
+
 // overflow
 @each $key in $overflow {
     .overflow-#{$key} {
