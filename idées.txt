@@ -1,16 +1,7 @@
-opacity
-border-radius
-font-size
-width
-headh
-
-z-index
+colors-site et colors
 
 flex
 
 grid
 
 @media screen
-
-MOINS IMPORTANT
-:active

@@ -1,22 +1,22 @@
-//style
-@import 'style';
+//main
+@import 'main';
 
 //variables & functions
-@import 'functions';
 @import 'variables';
+@import 'functions';
 
 //base & layout
 @import 'base';
+@import 'flex-and-grid';
 @import 'breakpoints';
-@import 'grid';
 
 //colors
 @import 'colors';
 
 //components
-@import 'components/card';
-@import 'components/button';
 @import 'components/navbar';
+@import 'components/button';
+@import 'components/card';
 @import 'components/badge';
 
 //utilities

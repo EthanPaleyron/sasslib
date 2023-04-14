@@ -1,5 +1,7 @@
 @each $key,
 $val in $colors {
+
+    // text-color
     .text-#{$key} {
         color: $val;
     }
@@ -10,9 +12,65 @@ $val in $colors {
         }
     }
 
+    .text-active-#{$key} {
+        &:active {
+            color: $val;
+        }
+    }
+
+    .text-visited-#{$key} {
+        &:visited {
+            color: $val;
+        }
+    }
+
+    // background-color
     .bg-#{$key} {
         background-color: $val;
     }
+
+    .bg-hover-#{$key} {
+        &:hover {
+            background-color: $val;
+        }
+    }
+
+    .bg-active-#{$key} {
+        &:active {
+            background-color: $val;
+        }
+    }
+
+    .bg-visited-#{$key} {
+        &:visited {
+            background-color: $val;
+        }
+    }
+
+    // border-color
+    .bc-#{$key} {
+        border-color: $val;
+    }
+
+    .bc-hover-#{$key} {
+        &:hover {
+            border-color: $val;
+        }
+    }
+
+    .bc-active-#{$key} {
+        &:active {
+            border-color: $val;
+        }
+    }
+
+    .bc-visited-#{$key} {
+        &:visited {
+            border-color: $val;
+        }
+    }
+
+    
 
     @if ($val !=black and $val !=white) {
 
@@ -50,6 +108,4 @@ $val in $colors {
             }
         }
     }
-
-
 }

@@ -1,38 +1,20 @@
-@use 'sass:math';
-
-$utilities: (
-    "opacity": ("prefix": "o",
-        "values": ("10": 0.1,
-            "20": 0.2,
-            "30": 0.3,
-            "40": 0.4,
-            "50": 0.5,
-            "60": 0.6,
-            "70": 0.7,
-            "80": 0.8,
-            "90": 0.9,
-            "100": 1,
-        ),
-    ),
-    "border-radius": ("prefix": "br",
-        "values": ("default": $base-border-radius,
-            "none": 0,
-            "xs": math.div($base-border-radius, 4),
-            "sm": math.div($base-border-radius, 2),
-            "lg": $base-border-radius * 2,
-            "full": 50%,
-        )),
-
-    "font-size": ("prefix": "font",
-        "values": ("sm": $font-size-sm,
-            "md": $base-font-size,
-            "lg": $font-size-lg,
-            "xl": $font-size-xl,
-            "xxl": $font-size-xxl ))
-);
-
 @for $i from 100 through 0 {
 
+    // font-size
+    .size-#{$i} {
+        font-size: $base-font-size * $i;
+    }
+    
+    // width
+    .w-#{$i} {
+        width: $width * $i;
+    }
+    
+    // heidth
+    .h-#{$i} {
+        height: $hedth * $i;
+    }
+    
     // margin
     .m-#{$i} {
         margin: $base-margin * $i;
@@ -79,27 +61,27 @@ $utilities: (
     .gap-#{$i} {
         gap: $gap * $i;
     }
+    
+    // border
+    .bt-#{$i} {
+        border: $base-border-thickness * $i;
+    }
+    
+    .br-#{$i} {
+        border-radius: $base-border-radius * $i;
+    }    
+    
+    // z-index
+    .z-#{$i} {
+        $z-index: $z-index * $i;
+    }
+    
 }
 
-// generate utility classes
-@each $property,
-$map in $utilities {
-    $prefix: map-get($map, "prefix");
-    $values: map-get($map, "values");
-
-    @each $k,
-    $v in $values {
-        @if($k =="default") {
-            .#{$prefix} {
-                #{$property}: $v;
-            }
-        }
-
-        @else {
-            .#{$prefix}-#{$k} {
-                #{$property}: $v;
-            }
-        }
+// opacity
+@for $i from 0 through $opacity {
+    .o-#{$i} {
+        opacity: $i / $opacity;
     }
 }
 
@@ -140,7 +122,7 @@ $map in $utilities {
 
 // border-style
 @each $key in $border-style {
-    .border-style-#{$key} {
+    .border-#{$key} {
         border-style: $key;
     }
 }
@@ -198,5 +180,48 @@ $map in $utilities {
 @each $key in $float {
     .float-#{$key} {
         float: $key;
+    }
+}
+
+
+// MAIN
+
+// font-family
+@each $key,
+$val in $font-family {
+    .font-family-#{$key} {
+        font-family: $val;
+    }
+}
+
+// background-image
+@each $key,
+$val in $background-image {
+    .image-#{$key} {
+        background-image: $val;
+    }
+}
+
+// box-shadow
+@each $key,
+$val in $base-shadow {
+    .b-shadow-#{$key} {
+        box-shadow: $val;
+    }
+}
+
+// text-shadow
+@each $key,
+$val in $base-shadow {
+    .t-shadow-#{$key} {
+        text-shadow: $val;
+    }
+}
+
+// linear-gradient
+@each $key,
+$val in $linear-gradient {
+    .lg-#{$key} {
+        text-shadow: $val;
     }
 }

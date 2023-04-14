@@ -20,10 +20,6 @@ $val in $colors {
         &:hover {
             background-color: lighten($val, 5);
         }
-
-        @include xs {
-            font-size: 1em;
-        }
     }
 
     .btn-outlined-#{$key} {

@@ -4,7 +4,7 @@
     display: block;
     padding: $base-padding;
     border: $base-border-thickness solid #ddd;
-    box-shadow: $base-box-shadow;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
     border-radius: math.div($base-border-radius, 4);
 
     &--title {
@@ -15,9 +15,5 @@
 
     &--body {
         font-size: $base-font-size;
-    }
-
-    @include xs {
-        font-size: 1rem;
     }
 }

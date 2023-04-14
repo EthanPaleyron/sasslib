@@ -1,10 +1,11 @@
-// color palette
+// 🔵COLORS PALETTE
+
 $colors: (
-    // COLORS MAIN ❗
-    "primary": $primary,
-    "secondary": $secondary,
-    "error": $error,
-    "info": $info,
+    // colors-site
+    "primary": #326dee,
+    "secondary": #1ac888,
+    "error": #d32752,
+    "info": #f6c31c,
 
     // rainbow color
     "red": red,
@@ -13,52 +14,55 @@ $colors: (
     "lawngreen": lawngreen,
     "blue": blue,
     "purple": blueviolet,
-
-    // other
-    "goldenrod": goldenrod,
-    "green": green,
-    "olive": olive,
-    "dodgerblue": dodgerblue,
-    "cyan": cyan,
-    "violet": violet,
-    "pink": pink,
-    "salmon": salmon,
-    "wheat": wheat,
-    "antiquewhite": antiquewhite,
-    "darkslategrey": darkslategrey,
-    "gray": gray,
-
+    
     // black and white
     "black": black,
     "white": white,
+    
+    // // favorits colors
+    // "goldenrod": goldenrod,
+    // "green": green,
+    // "olive": olive,
+    // "dodgerblue": dodgerblue,
+    // "cyan": cyan,
+    // "violet": violet,
+    // "pink": pink,
+    // "salmon": salmon,
+    // "wheat": wheat,
+    // "antiquewhite": antiquewhite,
+    // "darkslategrey": darkslategrey,
+    // "gray": gray,
 );
 
-// @debug map-get($map: $colors, $key: "purple");
-// @debug map-has-key($map: $colors, $key: "secondary");
-// @debug map-remove($map: $colors, $key: "primary");
-// @debug map-merge($map1: $colors, $map2: ("primary": $primary, ));
-
+    
+// 🔵SIZING
+    
+// size
+$base-font-size: 0.50rem;
+$font-size-sm: $base-font-size * 0.75;
+$font-size-lg: $base-font-size * 1.5;
+$font-size-xl: $base-font-size * 2;
+$font-size-xxl: $base-font-size * 3;
+$width: 0.75rem;
+$hedth: 0.75rem;
 
 // spacing
 $base-margin: 0.75rem;
 $base-padding: 0.75rem;
-$gap: 5px;
-
-// opacity
-$opacity: 0.1;
+$gap: 0.75rem;
 
 // borders
 $base-border-thickness: 1px;
 $base-border-radius: 20px;
 
-// font-size
-$base-font-size: 1rem;
-$font-size-sm: $base-font-size * 0.75;
-$font-size-lg: $base-font-size * 1.5;
-$font-size-xl: $base-font-size * 2;
-$font-size-xxl: $base-font-size * 3;
+// z-index
+$z-index: 1;
 
-// 🔵main
+// opacity
+$opacity: 10;
+
+
+// 🔵MAIN
 
 // font-style
 $font-style: normal, italic, oblique;
@@ -82,7 +86,7 @@ $border-style: solid, double, groove, ridge, inset, outset, dashed, dotted, none
 $cursor: default, pointer, text, progress, wait, no-drop, not-allowed, help, move, grab, grabbing, zoom-in, zoom-out, crosshair;
 
 
-// 🔵positioning
+// 🔵POSITIONING
 
 // position text
 $text-align: start, center, end;
