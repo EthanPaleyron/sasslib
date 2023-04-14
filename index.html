@@ -12,11 +12,16 @@
 <body class="font-family-poppins">
   <nav class="navbar-primary text-white mb-4">
     <div class="container">
-      <h2 class="site-title">Shinobi CSS</h2>
-      <p>A lightweight CSS library for dev ninjas</p>
-      <a href="homepage.html">Demo</a>
+      <h1 class="site-title before-strings text-before-error after-strings text-after-error">Shinobi CSS</h1>
+      <ul class="d-flex">
+        <li class="mrl-3 text-hover-orange">link 1</li>
+        <li class="mrl-3 text-hover-orange">link 2</li>
+        <li class="mrl-3 text-hover-orange">link 3</li>
+      </ul>
+      <a class="text-hover-orange text-visited-lawngreen" href="homepage.html">Demo</a>
     </div>
   </nav>
+
   <div class="container">
     <!-- colors -->
     <h2 class="mb-2">Colors</h2>
@@ -57,19 +62,20 @@
     <span class="bg-primary-light-8 text-white">primary light 8</span> |
 
     <br><br>
-    <a href="#" class="text-primary text-hover-orange-light-1">hover me</a>
+    <a href="#" class="text-primary text-hover-orange-light-1">hover me</a><br>
+    <a href="#" class="text-primary text-active-red">click on me (active)</a>
 
-    <hr class="mt-4 mb-4">
+    <hr class="mtb-4">
 
     <!-- font sizes -->
     <h2 class="mb-2">Font Sizes</h2>
-    <div class="size-10">this is small font</div>
-    <div class="size-">this is medium font</div>
-    <div class="size-">this is large font</div>
-    <div class="size-">this is extra large font</div>
-    <div class="size-">this is extra, extra large font</div>
+    <p class="size-2">this is small font</p>
+    <p class="size-4">this is medium font</p>
+    <p class="size-6">this is large font</p>
+    <p class="size-8">this is extra large font</p>
+    <p class="size-10">this is extra, extra large font</p>
 
-    <hr class="mt-4 mb-4">
+    <hr class="mtb-4">
 
     <!-- buttons -->
     <h2 class="mb-2">Buttons</h2>
@@ -83,21 +89,27 @@
     <a href="#" class="btn-complement-purple">click me</a>
     <a href="#" class="btn-complement-primary">click me</a>
 
-    <hr class="mt-4 mb-4">
+    <hr class="mtb-4">
 
     <!-- cards -->
     <h2 class="mb-2">Cards</h2>
     <div class="card">
-      <h1 class="card--title">This is a card title</h1>
-      <p class="card--body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, rerum. Reiciendis
+      <h2 class="card--title text-center">This is a card title</h2>
+      <p class="card--body"><span class="font-s-oblique">Lorem ipsum</span> dolor sit amet consectetur adipisicing elit.
+        Repellendus, rerum. Reiciendis
         error
-        sunt fugit praesentium <a href="#">quisquam voluptates</a> voluptatibus minus? Exercitationem expedita
+        sunt fugit praesentium <a class="text-d-underline text-d-color-blue" href="#">quisquam voluptates</a>
+        voluptatibus
+        minus?
+        <span class="text-t-uppercase font-w-bold">Exercitationem</span>
+        expedita
         praesentium
         ipsam magnam
-        est quis odit officiis, quas dolorem.</p>
+        est quis odit officiis, quas dolorem.
+      </p>
     </div>
 
-    <hr class="mt-4 mb-4">
+    <hr class="mtb-4">
 
     <!-- grid system -->
     <h2 class="mb-2">Grid System</h2>
@@ -128,11 +140,14 @@
       </div>
     </div>
 
-    <hr class="mt-4 mb-4">
+    <hr class="mtb-4">
 
-    <!-- utilities -->
+    <h2 class="mb-2">Shape</h2>
 
-    <hr class="mt-4 mb-4">
+    <div class="d-flex justify-center">
+      <div class="brc-50 bg-secondary w-10 h-10"></div>
+    </div>
+
   </div>
 </body>
 

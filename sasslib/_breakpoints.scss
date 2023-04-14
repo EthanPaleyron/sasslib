@@ -42,28 +42,28 @@ $breakpoints: (
     }
 }
 
-.responsive-test {
-    @include xs {
-        color: red;
-    }
+// .responsive-test {
+//     @include xs {
+//         color: red;
+//     }
 
-    @include sm {
-        color: blue;
-    }
+//     @include sm {
+//         color: blue;
+//     }
 
-    @include md {
-        color: green;
-    }
+//     @include md {
+//         color: green;
+//     }
 
-    @include lg {
-        color: purple;
-    }
+//     @include lg {
+//         color: purple;
+//     }
 
-    @include xl {
-        color: orange;
-    }
+//     @include xl {
+//         color: orange;
+//     }
 
-    @include breakpoint(1400px) {
-        color: pink;
-    }
-}
+//     @include breakpoint(1400px) {
+//         color: pink;
+//     }
+// }

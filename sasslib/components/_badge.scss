@@ -1,6 +1,6 @@
 @use 'sass:math';
 
-@mixin badge($bg-color: "info") {
+@mixin badge($bg-color: #f6c31c) {
     border-radius: $base-border-radius * 4;
     background-color: $bg-color;
     padding: 0.3rem 0.5rem;

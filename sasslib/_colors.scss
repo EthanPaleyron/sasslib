@@ -70,7 +70,46 @@ $val in $colors {
         }
     }
 
-    
+    // text-decoration
+    .text-d-color-#{$key} {
+        text-decoration-color: $val;
+    }
+
+    .text-d-color-hover-#{$key} {
+        &:hover {
+            text-decoration-color: $val;
+        }
+    }
+
+    .text-d-color-active-#{$key} {
+        &:active {
+            text-decoration-color: $val;
+        }
+    }
+
+    .text-d-color-visited-#{$key} {
+        &:visited {
+            text-decoration-color: $val;
+        }
+    }
+
+    // :before and :after
+    .text-before-#{$key}:before {
+        color: $val;
+    }
+
+    .text-after-#{$key}:after {
+        color: $val;
+    }
+
+    .bg-before-#{$key}:before {
+        background-color: $val;
+    }
+
+    .bg-after-#{$key}:after {
+        background-color: $val;
+    }
+
 
     @if ($val !=black and $val !=white) {
 

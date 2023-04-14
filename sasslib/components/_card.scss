@@ -8,12 +8,12 @@
     border-radius: math.div($base-border-radius, 4);
 
     &--title {
-        font-size: $font-size-lg;
+        font-size: $font-size-xxl;
         padding-bottom: $base-padding;
         font-weight: bold;
     }
 
     &--body {
-        font-size: $base-font-size;
+        font-size: $font-size-xl;
     }
 }

@@ -1,3 +1,5 @@
+// @IMPORT YOUR FONT-FAMILY HERE ↴
+
 // 🔵colors of the site
 // $colors-site: (
 //     "primary": #326dee,
@@ -8,23 +10,15 @@
 
 // 🔵font-family
 $font-family: (
-    "sans-serif": sans-serif,
     "poppins": Poppins,
-);
 
-// 🔵grid
+    // font-family general
+    "serif": serif,
+    "sans-serif": sans-serif,
+    "cursive": cursive,
+    "system-ui": system-ui,
+    "monospace": monospace,
+    "fantasy": fantasy,
 
-// 🔵background-image
-$background-image: ( 
-    "name": url(),
-);
-
-// 🔵box-shadow
-$base-shadow: (
-    "primary": 1px 3px 5px rgba(0, 0, 0, 0.1),
-);
-
-// 🔵linear-gradient
-$linear-gradient:(
-    "primary": linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%),
+    // favorits font-family
 );

@@ -8,12 +8,16 @@ $grid-columns: 12;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    box-sizing: border-box;
 }
 
 .row {
     display: flex;
     flex-flow: row wrap;
+}
+
+.colums {
+    display: flex;
+    flex-flow: column;
 }
 
 // col classes
