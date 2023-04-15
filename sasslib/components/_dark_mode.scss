@@ -1,3 +1,5 @@
+// $animation: 3s ease-in black;
+
 .b-dark-mode {
     color: $light-mode;
     text-transform: uppercase;
@@ -6,12 +8,28 @@
     padding: $base-padding;
 }
 
-body[data-theme="dark"] {
-    color: black;
-    background-color: white;
+// %img-dark-mode {
+//     transform: rotate(180deg);
+//     width: 5rem;
+//     height: 5rem;
+// }
+
+// .img-dark-mode {
+//     @extend %img-dark-mode;
+//     background-image: url(../../img/logo/circle-dark.svg);
+// }
+
+body[data-theme="light"] {
+    color: $dark-mode;
+    background-color: $light-mode;
 }
 
-// OPTION 2
+body[data-theme="dark"] {
+    color: $light-mode;
+    background-color: $dark-mode;
+}
+
+// 🔵dark mode auto (paramertes from pc)
 
 // @media (prefers-color-scheme: dark) {
 //     body {
