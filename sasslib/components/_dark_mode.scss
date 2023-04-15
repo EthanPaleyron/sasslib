@@ -1,0 +1,28 @@
+.b-dark-mode {
+    color: $light-mode;
+    text-transform: uppercase;
+    background-color: $dark-mode;
+    border-radius: 0.5rem;
+    padding: $base-padding;
+}
+
+body[data-theme="dark"] {
+    color: black;
+    background-color: white;
+}
+
+// OPTION 2
+
+// @media (prefers-color-scheme: dark) {
+//     body {
+//         color: $light-mode;
+//         background-color: $dark-mode;
+//     }
+// }
+
+// @media (prefers-color-scheme: light) {
+//     body {
+//         color: $dark-mode;
+//         background-color: $light-mode;
+//     }
+// }

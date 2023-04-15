@@ -12,12 +12,12 @@ $grid-columns: 12;
 
 .row {
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: row;
 }
 
 .colums {
     display: flex;
-    flex-flow: column;
+    flex-direction: column;
 }
 
 // col classes

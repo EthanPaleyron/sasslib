@@ -92,6 +92,9 @@ border-solid
 CURSOR🧾
 cursor-pointer
 
+USER-SELECT🧾
+user-s-text
+
 
 🔵POSITIONING
 

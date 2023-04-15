@@ -10,7 +10,7 @@
 
 //base & layout
 @import 'base';
-@import 'flex-and-grid';
+@import 'flex_and_grid';
 @import 'breakpoints';
 
 //colors
@@ -20,6 +20,7 @@
 @import 'components/navbar';
 @import 'components/button';
 @import 'components/card';
+@import 'components/dark_mode';
 @import 'components/badge';
 
 //utilities

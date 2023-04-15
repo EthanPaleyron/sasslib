@@ -6,6 +6,10 @@
     padding: 0.3rem 0.5rem;
     font-size: 1rem;
     font-weight: normal;
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
 }
 
 .badge {

@@ -1,12 +1,5 @@
 // @IMPORT YOUR FONT-FAMILY HERE ↴
 
-// 🔵colors of the site
-// $colors-site: (
-//     "primary": #326dee,
-//     "secondary": #1ac888,
-//     "error": #d32752,
-//     "info": #f6c31c,
-// );
 
 // 🔵font-family
 $font-family: (
@@ -19,6 +12,29 @@ $font-family: (
     "system-ui": system-ui,
     "monospace": monospace,
     "fantasy": fantasy,
+);
 
-    // favorits font-family
+// 🔵colors
+$dark-mode: #2D3142;
+$light-mode: #FFF;
+
+$colors: (
+    // colors of the site
+    "primary": #326dee,
+    "secondary": #1ac888,
+    "error": #d32752,
+    "info": #f6c31c,
+
+    // rainbow color
+    "red": red,
+    "orange": orange,
+    "yellow": yellow,
+    "lawngreen": lawngreen,
+    "blue": blue,
+    "purple": blueviolet,
+
+    // black and white
+    "black": black,
+    "gray": gray,
+    "white": white,
 );

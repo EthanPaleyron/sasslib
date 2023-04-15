@@ -28,3 +28,8 @@ $linear-gradient: (
 $list_image: (
     "name": url(),
 );
+
+// 🔵text-decoration
+.text-underline {
+    text-decoration: underline red;
+}

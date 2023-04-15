@@ -66,6 +66,11 @@
         font-size: $base-font-size * $i;
     }
 
+    // line-height
+    .line-h-#{$i} {
+        line-height: $base-line-height * $i;
+    }
+
     // padding
     .p-#{$i} {
         padding: $base-padding * $i;
@@ -142,13 +147,6 @@
     }
 }
 
-// text-decoration
-@each $key in $text-decoration {
-    .text-d-#{$key} {
-        text-decoration: $key;
-    }
-}
-
 // list-style
 @each $key in $list-style {
     .list-s-#{$key} {
@@ -184,6 +182,18 @@
     }
 }
 
+// user-select
+@each $key in $user-select {
+    .user-s-#{$key} {
+        user-select: $key;
+        -ms-user-select: $key;
+        -moz-user-select: $key;
+        -webkit-user-select: $key;
+        -webkit-user-drag: $key;
+        -webkit-touch-callout: $key;
+    }
+}
+
 
 // 🔵POSITIONING
 
@@ -204,6 +214,7 @@
 // justify-content
 @each $key in $justify-content {
     .justify-#{$key} {
+        display: flex;
         justify-content: $key;
     }
 }
@@ -211,6 +222,7 @@
 // align-items
 @each $key in $align-items {
     .items-#{$key} {
+        display: flex;
         align-items: $key;
     }
 }

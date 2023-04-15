@@ -70,29 +70,6 @@ $val in $colors {
         }
     }
 
-    // text-decoration
-    .text-d-color-#{$key} {
-        text-decoration-color: $val;
-    }
-
-    .text-d-color-hover-#{$key} {
-        &:hover {
-            text-decoration-color: $val;
-        }
-    }
-
-    .text-d-color-active-#{$key} {
-        &:active {
-            text-decoration-color: $val;
-        }
-    }
-
-    .text-d-color-visited-#{$key} {
-        &:visited {
-            text-decoration-color: $val;
-        }
-    }
-
     // :before and :after
     .text-before-#{$key}:before {
         color: $val;

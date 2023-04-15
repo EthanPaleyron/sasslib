@@ -95,10 +95,11 @@
     <h2 class="mb-2">Cards</h2>
     <div class="card">
       <h2 class="card--title text-center">This is a card title</h2>
-      <p class="card--body"><span class="font-s-oblique">Lorem ipsum</span> dolor sit amet consectetur adipisicing elit.
+      <p class="card--body line-h-3"><span class="font-s-oblique">Lorem ipsum</span> dolor sit amet consectetur
+        adipisicing elit.
         Repellendus, rerum. Reiciendis
         error
-        sunt fugit praesentium <a class="text-d-underline text-d-color-blue" href="#">quisquam voluptates</a>
+        sunt fugit praesentium <a class="text-underline" href="#">quisquam voluptates</a>
         voluptatibus
         minus?
         <span class="text-t-uppercase font-w-bold">Exercitationem</span>
@@ -144,11 +145,30 @@
 
     <h2 class="mb-2">Shape</h2>
 
-    <div class="d-flex justify-center">
+    <div class="d-flex justify-center mb-5">
       <div class="brc-50 bg-secondary w-10 h-10"></div>
     </div>
 
+    <h2 class="mb-2">Unselectable</h2>
+
+    <!-- components -->
+
+    <h2 class="user-s-none text-center">text and image unselectable</h2>
+    <h2 class="user-s-all text-center">text selectable onclick</h2>
+    <div class="justify-center mtb-4">
+      <img class="user-s-none" src="img/mario.png" alt="mario">
+    </div>
+
+    <hr class="mtb-4">
+
+    <h2 class="mb-2">Dark mode</h2>
+
+    <button id="darkMode" class="b-dark-mode">Dark</button>
+
+    <hr class="mtb-4">
   </div>
+  <script type="module" src="js/main.js"></script>
+  <script type="module" src="js/components/_dark_mode.js"></script>
 </body>
 
 </html>
