@@ -5,7 +5,6 @@ flex et grid
 
 🔴COMPONENTS
 
-dark mode
 input
 
 ------------------------------------

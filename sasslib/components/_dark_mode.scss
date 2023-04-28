@@ -1,23 +1,6 @@
-// $animation: 3s ease-in black;
-
-.b-dark-mode {
-    color: $light-mode;
-    text-transform: uppercase;
-    background-color: $dark-mode;
-    border-radius: 0.5rem;
-    padding: $base-padding;
+* {
+    transition: all ease-out 0.3s;
 }
-
-// %img-dark-mode {
-//     transform: rotate(180deg);
-//     width: 5rem;
-//     height: 5rem;
-// }
-
-// .img-dark-mode {
-//     @extend %img-dark-mode;
-//     background-image: url(../../img/logo/circle-dark.svg);
-// }
 
 body[data-theme="light"] {
     color: $dark-mode;
