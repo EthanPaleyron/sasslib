@@ -3,6 +3,14 @@
     padding: $base-padding $base-padding * 2;
     border-radius: $base-border-radius;
     background-color: $bg-color;
+
+    body[data-theme="dark"] & {
+        color: $dark-mode;
+    }
+
+    body[data-theme="light"] & {
+        color: $dark-mode;
+    }
 }
 
 .btn {

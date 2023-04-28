@@ -14,16 +14,16 @@ darkMode.addEventListener('click', () => {
     }
 })
 
-// 🔴Switch
-const switchImg = document.getElementsByClassName('switchImg');
+// 🔴Switch Img
+const switchImg = document.querySelector('.switchImg');
 let b = true;
 
 switchImg.addEventListener('click', () => {
     if (b) {
-        // switchImg.src = "./img/logo/circle-light.svg"
+        switchImg.src = "./img/logo/circle-light.svg";
         b = false;
     } else {
-        // switchImg.src = "./img/logo/circle-light.svg"
+        switchImg.src = "./img/logo/circle-dark.svg";
         b = true;
     }
 })

@@ -1,15 +1,17 @@
-* {
-    transition: all ease-out 0.3s;
+%translation {
+    transition: all ease-out 0.2s;
 }
 
 body[data-theme="light"] {
     color: $dark-mode;
     background-color: $light-mode;
+    @extend %translation;
 }
 
 body[data-theme="dark"] {
     color: $light-mode;
     background-color: $dark-mode;
+    @extend %translation;
 }
 
 // 🔵dark mode auto (paramertes from pc)

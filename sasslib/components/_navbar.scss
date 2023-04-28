@@ -1,4 +1,4 @@
-%flex-layout {
+%flex-layout-nav {
     width: 100%;
     display: flex;
     align-items: center;
@@ -6,7 +6,7 @@
 }
 
 .navbar {
-    @extend %flex-layout;
+    @extend %flex-layout-nav;
     padding: $base-padding $base-padding * 2;
 
     .site-title {
@@ -14,7 +14,7 @@
     }
 
     .container {
-        @extend %flex-layout;
+        @extend %flex-layout-nav;
     }
 }
 

@@ -69,7 +69,7 @@ FONT-STYLE🧾
 font-style-normal
 
 FONT-WEIGHT🧾
-font-weight-normal
+font-w-normal
 
 TEXT-TRANSFORM🧾
 text-t-uppercase

@@ -1,0 +1,28 @@
+%flex-layout-footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem 4rem;
+}
+
+.footer {
+    @extend %flex-layout-footer;
+    padding: $base-padding * 6 $base-padding * 8;
+
+    .site-title {
+        font-size: $font-size-xxl;
+    }
+
+    .container {
+        @extend %flex-layout-footer;
+    }
+}
+
+@each $key,
+$val in $colors {
+    .footer-#{$key} {
+        @extend .footer;
+        background-color: $val;
+    }
+}

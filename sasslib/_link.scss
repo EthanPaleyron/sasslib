@@ -1,7 +1,5 @@
-//main
+//main & other
 @import 'main';
-
-//other
 @import 'other';
 
 //variables & functions
@@ -17,12 +15,13 @@
 @import 'colors';
 
 //components
-@import 'components/switch';
-@import 'components/navbar';
+@import 'components/badge';
 @import 'components/button';
 @import 'components/card';
 @import 'components/dark_mode';
-@import 'components/badge';
+@import 'components/footer';
+@import 'components/navbar';
+@import 'components/switch';
 
 //utilities
 @import 'utilities';
