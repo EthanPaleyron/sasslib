@@ -283,6 +283,14 @@ $val in $background-image {
     }
 }
 
+// filter
+@each $key,
+$val in $filter {
+    .filter-#{$key} {
+        filter: $val;
+    }
+}
+
 // box-shadow
 @each $key,
 $val in $base-shadow {
