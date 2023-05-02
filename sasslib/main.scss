@@ -15,15 +15,13 @@ $font-family: (
 );
 
 // 🔵colors
-$dark-mode: #000;
-$light-mode: #FFF;
-
 $colors: (
     // colors of the site
     "primary": #326dee,
     "secondary": #1ac888,
     "error": #d32752,
     "info": #f6c31c,
+    "sass": #BF4080,
 
     // rainbow color
     "red": red,
@@ -38,3 +36,6 @@ $colors: (
     "gray": gray,
     "white": white,
 );
+
+$dark-mode: #000;
+$light-mode: #FFF;

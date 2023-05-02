@@ -70,6 +70,52 @@ $val in $colors {
         }
     }
 
+    // text-decoration-color
+    .tdc-#{$key} {
+        text-decoration-color: $val;
+    }
+
+    .tdc-hover-#{$key} {
+        &:hover {
+            text-decoration-color: $val;
+        }
+    }
+
+    .tdc-active-#{$key} {
+        &:active {
+            text-decoration-color: $val;
+        }
+    }
+
+    .tdc-visited-#{$key} {
+        &:visited {
+            text-decoration-color: $val;
+        }
+    }
+
+    // border-text-color
+    .btc-#{$key} {
+        -webkit-text-stroke-color: $val;
+    }
+
+    .btc-hover-#{$key} {
+        &:hover {
+            -webkit-text-stroke-color: $val;
+        }
+    }
+
+    .btc-active-#{$key} {
+        &:active {
+            -webkit-text-stroke-color: $val;
+        }
+    }
+
+    .btc-visited-#{$key} {
+        &:visited {
+            -webkit-text-stroke-color: $val;
+        }
+    }
+
     // :before and :after
     .text-before-#{$key}:before {
         color: $val;

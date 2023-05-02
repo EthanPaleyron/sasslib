@@ -1,13 +1,8 @@
-🔴SASSLIB
-
-flex et grid
-@media screen
-
 🔴COMPONENTS
-
 menu hamburger
+
+🟡JS
 input
-comment changer les SVG
 
 ------------------------------------
 

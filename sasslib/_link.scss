@@ -8,18 +8,18 @@
 
 //base & layout
 @import 'base';
-@import 'flex_and_grid';
 @import 'breakpoints';
+@import 'flex_and_grid';
 
 //colors
 @import 'colors';
 
 //components
 @import 'components/badge';
+@import 'components/burger_menu';
 @import 'components/button';
 @import 'components/card';
 @import 'components/dark_mode';
-@import 'components/footer';
 @import 'components/navbar';
 @import 'components/switch';
 

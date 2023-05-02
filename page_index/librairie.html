@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/vite.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" lang="sass" href="../sasslib/_link.scss">
+    <title>Title</title>
+</head>
+
+<body data-theme="light" class="font-family-poppins">
+    <nav class="navbar-primary grayscale position-sticky t-0 text-white mb-4">
+        <div class="container">
+            <h1 class="site-title before-strings text-before-error after-strings text-after-error">Shinobi CSS</h1>
+            <ul class="d-flex">
+                <li class="mrl-3 text-hover-orange">link 1</li>
+                <li class="mrl-3 text-hover-orange">link 2</li>
+                <li class="mrl-3 text-hover-orange">link 3</li>
+            </ul>
+            <a class="text-hover-orange text-visited-lawngreen" href="homepage.html">Demo</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- colors -->
+        <h2 class="mb-2">Colors</h2>
+        <span class="text-primary">primary text</span> |
+        <span class="text-secondary">secondary text</span> |
+        <span class="text-error">error text</span> |
+        <span class="text-info">info text</span> |
+        <span class="text-blue">blue text</span> |
+        <span class="text-red">red text</span> |
+        <span class="text-lawngreen">green text</span> |
+        <span class="text-yellow">yellow text</span> |
+        <span class="text-purple">purple text</span> |
+        <span class="text-orange">orange text</span> |
+        <span class="text-gray">gray text</span>
+
+        <br><br>
+
+        <span class="bg-primary text-white">bg primary</span> |
+        <span class="bg-secondary text-white">bg secondary</span> |
+        <span class="bg-error text-white">bg error</span> |
+        <span class="bg-info text-white">bg info</span> |
+        <span class="bg-blue text-white">bg blue</span> |
+        <span class="bg-red text-white">bg red</span> |
+        <span class="bg-lawngreen text-white">bg green</span> |
+        <span class="bg-yellow text-white">bg yellow</span> |
+        <span class="bg-purple text-white">bg purple</span> |
+        <span class="bg-orange text-white">bg orange</span> |
+        <span class="bg-gray text-white">bg gray</span> |
+
+        <span class="bg-primary-dark-8 text-white">primary dark 8</span> |
+        <span class="bg-primary-dark-6 text-white">primary dark 6</span> |
+        <span class="bg-primary-dark-4 text-white">primary dark 4</span> |
+        <span class="bg-primary-dark-2 text-white">primary dark 2</span> |
+        <span class="bg-primary text-white">primary</span> |
+        <span class="bg-primary-light-2 text-white">primary light 2</span> |
+        <span class="bg-primary-light-4 text-white">primary light 4</span> |
+        <span class="bg-primary-light-6 text-white">primary light 6</span> |
+        <span class="bg-primary-light-8 text-white">primary light 8</span> |
+
+        <br><br>
+        <a href="#" class="text-primary text-hover-orange-light-1">hover me</a><br>
+        <a href="#" class="text-primary text-active-red">click on me (active)</a>
+
+        <hr class="mtb-4">
+
+        <!-- font sizes -->
+        <h2 class="mb-2">Font Sizes</h2>
+        <p class="size-2">this is small font</p>
+        <p class="size-4">this is medium font</p>
+        <p class="size-6">this is large font</p>
+        <p class="size-8">this is extra large font</p>
+        <p class="size-10">this is extra, extra large font</p>
+
+        <hr class="mtb-4">
+
+        <!-- buttons -->
+        <h2 class="mb-2">Buttons</h2>
+        <a href="#" class="btn">default btn</a>
+        <a href="#" class="btn-primary text-white">click me</a>
+        <a href="#" class="btn-secondary text-white">click me</a>
+        <a href="#" class="btn-error text-white">click me</a>
+        <a href="#" class="btn-info">click me</a>
+        <a href="#" class="btn-outlined-purple text-purple text-hover-white">click me</a>
+        <a href="#" class="btn-outlined-orange text-orange text-hover-white">click me</a>
+        <a href="#" class="btn-complement-purple">click me</a>
+        <a href="#" class="btn-complement-primary">click me</a>
+
+        <hr class="mtb-4">
+
+        <!-- cards -->
+        <h2 class="mb-2">Cards</h2>
+        <div class="card">
+            <h2 class="card--title text-center">This is a card title</h2>
+            <p class="card--body line-h-3"><span class="font-s-oblique">Lorem ipsum</span> dolor sit amet consectetur
+                adipisicing elit.
+                Repellendus, rerum. Reiciendis
+                error
+                sunt fugit praesentium <a class="text-d-underline tdt-1 tdc-error" href="#">quisquam voluptates</a>
+                voluptatibus
+                minus?
+                <span class="text-t-uppercase font-w-bold">Exercitationem</span>
+                expedita
+                praesentium
+                ipsam magnam
+                est quis odit officiis, quas dolorem.
+            </p>
+        </div>
+
+        <hr class="mtb-4">
+
+        <!-- grid system -->
+        <h2 class="mb-2">Grid System</h2>
+        <div class="row gap-2 justify-center">
+            <div class="col-12-xs col-5-sm col-3-xl">
+                <div class="card">
+                    <h3 class="card-title">Hello, ninjas</h3>
+                    <p class="card-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="col-12-xs col-5-sm col-3-xl">
+                <div class="card">
+                    <h3 class="card-title">Hello, ninjas</h3>
+                    <p class="card-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="col-12-xs col-5-sm col-3-xl">
+                <div class="card">
+                    <h3 class="card-title">Hello, ninjas</h3>
+                    <p class="card-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="col-12-xs col-5-sm col-3-xl">
+                <div class="card">
+                    <h3 class="card-title">Hello, ninjas</h3>
+                    <p class="card-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+
+        <hr class="mtb-4">
+
+        <h2 class="mb-2">Shape</h2>
+
+        <div class="d-flex justify-center mb-5">
+            <div class="brc-50 bg-secondary w-10 h-10"></div>
+        </div>
+
+        <h2 class="mb-2">Unselectable</h2>
+
+        <!-- components -->
+
+        <h2 class="user-s-none text-center">text and image unselectable</h2>
+        <h2 class="user-s-all text-center">text selectable onclick</h2>
+        <div class="justify-center mtb-4">
+            <img class="user-s-none" src="../img/mario.png" alt="mario">
+        </div>
+
+        <hr class="mtb-4">
+
+        <h2 class="mb-2">Dark mode</h2>
+
+        <div class="display-f justify-center">
+            <!-- <button id="darkMode" class="btn">Dark</button> -->
+            <img src="../img/main/circle-dark.svg" id="darkMode" class="switchImg w-9 user-s-none">
+        </div>
+
+        <hr class="mtb-4">
+    </div>
+
+    <footer class="bg-secondary grayscale p-2 text-white size-3 font-w-bold">
+        <h2 class="text-center btt-2 btc-black">FOOTER</h2>
+        <ul class="container">
+            <li>
+                <a class="display-f justify-center items-center gap-1" href="https://github.com/EthanPaleyron">Mon
+                    GitHub
+                    <img src="../img/networks/github.svg" class="filter-white w-4" alt="github">
+                </a>
+            </li>
+        </ul>
+    </footer>
+    <script type="module" src="../index.js"></script>
+</body>
+
+</html>

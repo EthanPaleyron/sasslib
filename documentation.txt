@@ -7,11 +7,23 @@
 -----------------------------------------------------------------
 🔵COLORS
 
-COLOR AND BACKGROUND-COLOR🧾
+COLOR AND🧾
 text-red
+
+BACKGROUND-COLOR📃
 bg-red
 
+BORDER-COLOR📃
 bc-red
+
+TEXT-DECORATION-COLOR🧾
+tdc-red
+
+TEXT-BORDER-COLOR📃
+btc-red
+
+
+🔵HOVER ACTIVE
 
 (text-d-color-red) pas fini !
 
