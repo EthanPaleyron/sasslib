@@ -76,6 +76,14 @@
         padding: $base-padding * $i;
     }
 
+    .ptb-#{$i} {
+        padding: $base-padding * $i 0 $base-padding * $i 0;
+    }
+
+    .prl-#{$i} {
+        padding: 0 $base-padding * $i 0 $base-padding * $i;
+    }
+
     .pt-#{$i} {
         padding-top: $base-padding * $i;
     }
@@ -105,19 +113,19 @@
     .btt-#{$i} {
         -webkit-text-stroke-width: $base-border-thickness * $i;
     }
-    
+
     .br-#{$i} {
         border-radius: $base-border-radius * $i;
     }
-    
+
     .brc-#{$i} {
         border-radius: $base-border-radius-circle * $i;
     }
-    
+
     .tdt-#{$i} {
         text-decoration-thickness: $base-text-decoration * $i;
     }
-    
+
     // z-index
     .z-#{$i} {
         z-index: $base-z-index * $i;
@@ -133,6 +141,14 @@
 
 
 // 🔵MAIN
+
+// font-family
+@each $key,
+$val in $font-family {
+    .font-family-#{$key} {
+        font-family: $val;
+    }
+}
 
 // font-style
 @each $key in $font-style {
@@ -257,19 +273,6 @@
 }
 
 
-// 🔵FLEX AND GRID
-
-
-// 🔵MAIN.SCSS
-
-// font-family
-@each $key,
-$val in $font-family {
-    .font-family-#{$key} {
-        font-family: $val;
-    }
-}
-
 // 🔵OTHER
 
 // :before and :after
@@ -277,7 +280,6 @@ $val in $font-family {
 $val in $before {
     .before-#{$key}:before {
         content: $val;
-        color: $val;
     }
 }
 
@@ -285,7 +287,6 @@ $val in $before {
 $val in $after {
     .after-#{$key}:after {
         content: $val;
-        color: $val;
     }
 }
 
@@ -308,7 +309,7 @@ $val in $filter {
 // box-shadow
 @each $key,
 $val in $base-shadow {
-    .b-shadow-#{$key} {
+    .bs-#{$key} {
         box-shadow: $val;
     }
 }
@@ -316,7 +317,7 @@ $val in $base-shadow {
 // text-shadow
 @each $key,
 $val in $base-shadow {
-    .t-shadow-#{$key} {
+    .ts-#{$key} {
         text-shadow: $val;
     }
 }

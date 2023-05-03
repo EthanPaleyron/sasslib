@@ -9,26 +9,38 @@
 
 COLOR AND🧾
 text-red
+HOVER ACTIVE VISITED🧾
+text-red-hover
+text-red-active
+text-red-visited
 
 BACKGROUND-COLOR📃
 bg-red
+HOVER ACTIVE VISITED🧾
+bg-red-hover
+bg-red-active
+bg-red-visited
 
 BORDER-COLOR📃
 bc-red
+HOVER ACTIVE VISITED🧾
+bc-red-hover
+bc-red-active
+bc-red-visited
 
 TEXT-DECORATION-COLOR🧾
 tdc-red
+HOVER ACTIVE VISITED🧾
+tdc-red-hover
+tdc-red-active
+tdc-red-visited
 
 TEXT-BORDER-COLOR📃
 btc-red
-
-
-🔵HOVER ACTIVE
-
-(text-d-color-red) pas fini !
-
-text ou bg-before-red
-text ou bg-after-red
+HOVER ACTIVE VISITED🧾
+btc-red-hover
+btc-red-active
+btc-red-visited
 
 
 🔵SIZING AND SPACE
@@ -42,6 +54,8 @@ h-0
 
 MARGIN🧾
 m-0
+mtb-0
+mrl-0
 mt-0
 mr-0
 mb-0
@@ -55,6 +69,8 @@ l-0
 
 PADDING🧾
 p-0
+ptb-0
+prl-0
 pt-0
 pr-0
 pb-0
@@ -65,8 +81,10 @@ gap-0
 
 BORDERS THICKNESS AND RADIUS🧾
 bt-0
+btt-0
 br-0
 brc-0
+tdt-0
 
 Z-INDEX🧾
 z-0
@@ -78,7 +96,7 @@ o-0
 🔵MAIN
 
 FONT-STYLE🧾
-font-style-normal
+font-s-normal
 
 FONT-WEIGHT🧾
 font-w-normal
@@ -128,11 +146,33 @@ position-relative
 FLOAT🧾
 float-right
 
-🔵FLEX AND GRID
 
-container
-row
-colums
+🔵OTHER
+
+BEFORE AND AFTER🧾
+before-(name)
+before-red
+
+after-(name)
+after-red
+
+BACKGROUND-IMAGE🧾
+image-(name)
+
+FILTER🧾
+filter-(name)
+
+🧾BOX AND TEXT-SHADOW
+bs-(name)
+ts-(name)
+
+LINEAR-GARDIENT🧾
+lg-(name)
+
+LISTE-STYLE-IMAGE🧾
+ul-(name)
+
+🔵FLEX AND GRID
 
 
 🔵MEDIA QUERY
