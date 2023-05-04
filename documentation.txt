@@ -16,6 +16,7 @@ text-red-visited
 
 BACKGROUND-COLOR📃
 bg-red
+
 HOVER ACTIVE VISITED🧾
 bg-red-hover
 bg-red-active
@@ -23,6 +24,7 @@ bg-red-visited
 
 BORDER-COLOR📃
 bc-red
+
 HOVER ACTIVE VISITED🧾
 bc-red-hover
 bc-red-active
@@ -30,6 +32,7 @@ bc-red-visited
 
 TEXT-DECORATION-COLOR🧾
 tdc-red
+
 HOVER ACTIVE VISITED🧾
 tdc-red-hover
 tdc-red-active
@@ -37,6 +40,7 @@ tdc-red-visited
 
 TEXT-BORDER-COLOR📃
 btc-red
+
 HOVER ACTIVE VISITED🧾
 btc-red-hover
 btc-red-active

@@ -3,8 +3,11 @@
 
 // 🔵background-image
 $background-image: (
-    "name": url(../img/marmite.png),
-    );
+    "burger-menu": url(../img/main/burger-menu.svg),
+    "xmark": url(../img/main/xmark.svg),
+    "dark": url(../img/main/circle-dark.svg),
+    "light": url(../img/main/circle-light.svg),
+);
 
 // 🔵:before and :after
 $before: (
