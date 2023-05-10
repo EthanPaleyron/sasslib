@@ -1,4 +1,5 @@
 %flex-layout-nav {
+    position: absolute;
     width: 100%;
     display: flex;
     align-items: center;
@@ -7,7 +8,7 @@
 
 .navbar {
     @extend %flex-layout-nav;
-    padding: $base-padding $base-padding * 2;
+    padding: 2.5rem 10%;
 
     .site-title {
         font-size: $font-size-xxl;
@@ -18,21 +19,37 @@
     }
 
     // Burger-menu
-    .b-burger-menu {
-        background-origin: border-box;
-        background-repeat: no-repeat;
+    .slider-menu {
+        position: relative;
+        z-index: 1;
+        padding: 0 0.5rem;
+        opacity: 0;
+        height: 50px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
     }
 
-    .slider-menu {
-        display: flex;
-        padding: 0 0.5rem;
-        background-color: red;
+    .menu-b {
+        margin-right: 5rem;
+    }
+
+    .menu-b:checked ~ .slider-menu {
+        opacity: 1;
+        top: 0;
+        left: 100%;
+        transform: translateX(-100%);
     }
 }
 
-.container.active .burger-menu-active {
-    transform: translate(20rem);
-    background-color: aqua;
+@media (max-width: 768px) {
+    ul {
+        display: none;
+    }
+
+    .menu-b {
+        display: block;
+    }
 }
 
 @each $key,
@@ -40,15 +57,5 @@ $val in $colors {
     .navbar-#{$key} {
         @extend .navbar;
         background-color: $val;
-    }
-}
-
-@media (min-width: 768px) {
-    .b-burger-menu {
-        display: none;
-    }
-
-    .slider-menu {
-        flex-direction: column;
     }
 }

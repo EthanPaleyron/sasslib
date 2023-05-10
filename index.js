@@ -1,19 +1,5 @@
 // 🔴SWITCH IMG
 
-// 🔵burger Menu
-const switchBurgerMenu = document.querySelector('.switchBurgerMenu');
-let boolBurgerMenu = true;
-
-switchBurgerMenu.addEventListener('click', () => {
-    if (boolBurgerMenu) {
-        switchBurgerMenu.style.backgroundImage = "url(../img/main/xmark.svg)";
-        boolBurgerMenu = false;
-    } else {
-        switchBurgerMenu.style.backgroundImage = "url(../img/main/burger-menu.svg)";
-        boolBurgerMenu = true;
-    }
-})
-
 // 🔵Dark Mode
 const switchDarkMode = document.querySelector('.switchDarkMode');
 let boolDarkMode = true;
@@ -31,9 +17,6 @@ switchDarkMode.addEventListener('click', () => {
 
 // 🔴MAIN
 
-// 🔵Burger Menu
-
-
 // 🔵Dark Mode
 const darkMode = document.getElementById('darkMode');
 const grayscale = document.getElementsByClassName('grayscale');
@@ -50,7 +33,3 @@ darkMode.addEventListener('click', () => {
 })
 
 const burgerMenu = document.getElementById('burgerMenu');
-
-// burgerMenu.addEventListener('click', () => {
-
-// })
