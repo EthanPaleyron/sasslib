@@ -1,5 +1,5 @@
 // @IMPORT YOUR FONT-FAMILY HERE ↴
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 // 🔵font-family
 $font-family: (
@@ -39,3 +39,40 @@ $colors: (
 
 $dark-mode: #000;
 $light-mode: #FFF;
+
+// 🔵background-image
+$background-image: (
+    "burger-menu": url(../img/main/burger-menu.svg),
+    "xmark": url(../img/main/xmark.svg),
+    "dark": url(../img/main/circle-dark.svg),
+    "light": url(../img/main/circle-light.svg),
+);
+
+// 🔵:before and :after
+$before: (
+    "strings": '"',
+);
+$after: (
+    "strings": '"',
+);
+
+// 🔵box-shadow
+$base-shadow: (
+    "primary": 1px 3px 5px rgba(0, 0, 0, 0.1),
+);
+
+// 🔵linear-gradient
+$linear-gradient: (
+    "primary": linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%),
+);
+
+// 🔵filter
+$filter: (
+    "black": invert(0%) sepia(92%) saturate(7467%) hue-rotate(113deg) brightness(91%) contrast(99%),
+    "white": invert(100%) sepia(0%) saturate(7500%) hue-rotate(20deg) brightness(98%) contrast(107%),
+);
+
+// 🔵ul-image
+$list_image: (
+    "name": url(),
+);

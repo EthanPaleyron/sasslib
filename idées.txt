@@ -1,10 +1,3 @@
-🔴COMPONENTS
-menu hamburger
-px shadow
-
-🟡JS
-input
-
 ------------------------------------
 
 🟡BONNUS

@@ -20,16 +20,14 @@ switchDarkMode.addEventListener('click', () => {
 // 🔵Dark Mode
 const darkMode = document.getElementById('darkMode');
 const grayscale = document.getElementsByClassName('grayscale');
-let boolDarkLight = true;
+let isDark = true;
 
 darkMode.addEventListener('click', () => {
-    if (boolDarkLight) {
+    if (isDark) {
         document.body.dataset["theme"] = "dark";
-        boolDarkLight = false;
+        isDark = false;
     } else {
         document.body.dataset["theme"] = "light";
-        boolDarkLight = true;
+        isDark = true;
     }
 })
-
-const burgerMenu = document.getElementById('burgerMenu');

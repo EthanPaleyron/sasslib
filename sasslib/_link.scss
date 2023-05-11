@@ -1,6 +1,5 @@
-//main & other
+//main
 @import 'main';
-@import 'other';
 
 //variables & functions
 @import 'variables';
@@ -9,7 +8,7 @@
 //base & layout
 @import 'base';
 @import 'breakpoints';
-@import 'flex_and_grid';
+@import 'grid';
 
 //colors
 @import 'colors';
@@ -20,7 +19,6 @@
 @import 'components/card';
 @import 'components/dark_mode';
 @import 'components/navbar';
-@import 'components/switch';
 
 //utilities
 @import 'utilities';
