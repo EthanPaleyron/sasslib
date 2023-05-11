@@ -1,6 +1,6 @@
 %flex-layout-nav {
-    position: absolute;
     width: 100%;
+    height: 5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -8,7 +8,8 @@
 
 .navbar {
     @extend %flex-layout-nav;
-    padding: 2.5rem 10%;
+    position: relative;
+    padding: $base-padding $base-padding * 2;
 
     .site-title {
         font-size: $font-size-xxl;
@@ -20,35 +21,40 @@
 
     // Burger-menu
     .slider-menu {
-        position: relative;
-        z-index: 1;
-        padding: 0 0.5rem;
-        opacity: 0;
-        height: 50px;
-        width: 100%;
         display: flex;
         flex-direction: row;
     }
 
     .menu-b {
-        margin-right: 5rem;
+        display: none;
+        user-select: none;
     }
 
-    .menu-b:checked ~ .slider-menu {
-        opacity: 1;
-        top: 0;
-        left: 100%;
-        transform: translateX(-100%);
+    .menu-check {
+        display: none;
     }
 }
 
 @media (max-width: 768px) {
-    ul {
-        display: none;
+    .slider-menu {
+        position: absolute;
+        display: none !important;
+        width: 100%;
+        border-bottom-left-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+        padding: 2rem 1rem;
+        justify-content: center;
+        top: 100%;
+        left: 0px;
+        z-index: 99;
+    }
+
+    .menu-check:checked ~ .slider-menu {
+        display: flex !important;
     }
 
     .menu-b {
-        display: block;
+        display: block !important;
     }
 }
 
@@ -56,6 +62,14 @@
 $val in $colors {
     .navbar-#{$key} {
         @extend .navbar;
+        background-color: $val;
+    }
+}
+
+@each $key,
+$val in $colors {
+    .slider-menu-#{$key} {
+        @extend .slider-menu;
         background-color: $val;
     }
 }
