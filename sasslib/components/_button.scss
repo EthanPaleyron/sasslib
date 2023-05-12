@@ -1,8 +1,8 @@
 @mixin btn($bg-color: #e2e2e2) {
-    cursor: pointer;
-    padding: $base-padding $base-padding * 2;
-    border-radius: $base-border-radius;
     background-color: $bg-color;
+    border-radius: $base-border-radius;
+    padding: $base-padding $base-padding * 2;
+    cursor: pointer;
 
     body[data-theme="dark"] & {
         color: $dark-mode;
