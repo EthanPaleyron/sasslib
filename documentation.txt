@@ -1,7 +1,68 @@
 🔴MAIN.SCSS
 
+FONT-FAMILY🧾
+font-family-(name)
+
+BACKGROUND-IMAGES🧾
+image-(name)
+
+BEFORE AND AFTER🧾
+before-(name)
+before-red
+
+after-(name)
+after-red
+
+BACKGROUND-IMAGE🧾
+image-(name)
+
+FILTER🧾
+filter-(name)
+
+BOX AND TEXT-SHADOW🧾
+bs-(name)
+ts-(name)
+
+LINEAR-GARDIENT🧾
+lg-(name)
+
+LISTE-STYLE-IMAGE🧾
+ul-(name)
+
 
 🔴COMPONENTS
+
+
+BADGE🧾
+badge-red
+
+BUTTON🧾
+btn
+btn-red
+btn-outlined-red
+btn-complement-red
+
+CARD🧾
+card
+card--title
+card--body
+
+DARK_MODE🧾
+<body> = data-theme="light"
+grayscale
+
+(button)
+id="darkMode"
+
+
+NAVBAR && SLIDER-MENU🧾
+navbar-red
+
+MENU
+slider-menu
+menu-b
+menu-check
+
 
 
 -----------------------------------------------------------------
@@ -150,33 +211,20 @@ position-relative
 FLOAT🧾
 float-right
 
-
-🔵OTHER
-
-BEFORE AND AFTER🧾
-before-(name)
-before-red
-
-after-(name)
-after-red
-
-BACKGROUND-IMAGE🧾
-image-(name)
-
-FILTER🧾
-filter-(name)
-
-🧾BOX AND TEXT-SHADOW
-bs-(name)
-ts-(name)
-
-LINEAR-GARDIENT🧾
-lg-(name)
-
-LISTE-STYLE-IMAGE🧾
-ul-(name)
-
-🔵FLEX AND GRID
-
+🔵GRID
+col-0-xs
 
 🔵MEDIA QUERY
+xs
+sm
+md
+lg
+xl
+
+-----------------------------------------------------------------
+JS🟡
+
+SWITCH🟡
+
+class =
+switchDarkMode
